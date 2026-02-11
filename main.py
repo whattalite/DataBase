@@ -366,13 +366,13 @@ def run_demo():
     if partners and products:
         new_order = {
             'partner_id': partners[0]['id'],
-            'required_date': '2024-03-01',
+            'required_date': '2026-03-01',
             'notes': 'Тестовая заявка'
         }
         
         new_items = [
-            {'product_id': products[0]['id'], 'quantity': 2, 'expiry_date': '2025-12-31'},
-            {'product_id': products[1]['id'], 'quantity': 1, 'expiry_date': '2025-06-30'}
+            {'product_id': products[0]['id'], 'quantity': 2, 'expiry_date': '2026-12-31'},
+            {'product_id': products[1]['id'], 'quantity': 1, 'expiry_date': '2026-06-30'}
         ]
         
         result = system.create_order(new_order, new_items)
